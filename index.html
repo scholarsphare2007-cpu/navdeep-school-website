@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navdeep Public Sr. Sec. School</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.jpg" alt="School Logo" class="school-logo">
+            <span class="logo-text">NAVDEEP PUBLIC SR SEC SCHOOL</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#streams">Faculties</a></li>
+                <li><a href="#facilities">Facilities</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="news-ticker">
+        <p>📢 Admission Open 2026-27 | Navdeep Public Sr. Sec. School, Sawai Madhopur | Contact: +91 8949713253 / +91 9829132935</p>
+    </div>
+
+    <div class="header-spacer"></div>
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h1>Navdeep Public Sr. Sec. School</h1>
+            <p>Shaping Futures, Building Character</p>
+            <button class="btn">Admission Open 2026-27</button>
+        </div>
+    </section>
+
+     <section id="about" class="about-section">
+    <div class="about-container award-special centered-layout">
+        <div class="award-badge">🏆 Winner 2023</div>
+        
+        <div class="about-image">
+            <img src="images/principal.jpg" alt="Principal Sir">
+        </div>
+        
+        <div class="about-content text-center">
+            <h2 class="award-title">Education Excellence Award 2023</h2>
+            <p class="award-desc">
+                Humne garv ke saath <strong>Dainik Bhaskar Education Award 2023</strong> apne naam kiya hai. 
+                Ye samman humein <strong>Governor of Rajasthan</strong> dwara shreshth shiksha ke liye diya gaya hai.
+            </p>
+            
+            <div class="award-divider"></div>
+            
+            <div class="principal-msg">
+                <h3>Principal's Message</h3>
+                <p>"Hamara lakshya har bacche ko sikhsha ke saath acche sanskar dena hai. Navdeep School mein hum behtar kal ka nirman karte hain."</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="streams" class="streams-section">
+        <h2>Faculties (Class 11th & 12th)</h2>
+        <div class="stream-container">
+            <div class="stream-card">
+                <div class="stream-icon">🧪</div>
+                <h3>Science</h3>
+                <p>Physics, Chemistry, Biology, Mathematics</p>
+                <button class="open-modal-btn" onclick="openFaculty('science')">View Faculty Details</button>
+            </div>
+            <div class="stream-card">
+                <div class="stream-icon">🎨</div>
+                <h3>Arts</h3>
+                <p>History, Political Science, Geography, Hindi/English</p>
+                <button class="open-modal-btn" onclick="openFaculty('arts')">View Faculty Details</button>
+            </div>
+            <div class="stream-card">
+                <div class="stream-icon">📊</div>
+                <h3>Commerce</h3>
+                <p>Accountancy, Business Studies, Economics</p>
+                <button class="open-modal-btn" onclick="openFaculty('commerce')">View Faculty Details</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="facilities" class="features">
+        <h2>Our Facilities</h2>
+        <div class="feature-container">
+            <div class="feature-box">
+                <h3>Science Lab</h3>
+                <p>Fully equipped modern labs for Physics, Chemistry & Bio.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Computer Lab</h3>
+                <p>High-speed internet and latest systems for digital learning.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Smart Classes</h3>
+                <p>Interactive learning with audio-visual aids.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="toppers">
+        <h2>Academic Wall of Fame (2025)</h2>
+        <div class="topper-container">
+            <div class="topper-card">
+                <div class="topper-badge">Gold</div>
+                <img src="images/topper1.jpg" alt="Topper">
+                <h3>98.4%</h3>
+                <p>Amit Kumar (Class 12th)</p>
+            </div>
+            <div class="topper-card">
+                <div class="topper-badge silver">Silver</div>
+                <img src="images/topper2.jpg" alt="Topper">
+                <h3>96.2%</h3>
+                <p>Priya Sharma (Class 10th)</p>
+            </div>
+            <div class="topper-card">
+                <div class="topper-badge bronze">Bronze</div>
+                <img src="images/topper3.jpg" alt="Topper">
+                <h3>95.8%</h3>
+                <p>Rahul Jangid (Class 12th)</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <h2>School Campus & Activities</h2>
+        <div class="gallery-container">
+            <div class="gallery-item"><img src="images/lab.jpg" alt="Lab"><p>Modern Lab</p></div>
+            <div class="gallery-item"><img src="images/ground.jpg" alt="Ground"><p>Sports Ground</p></div>
+            <div class="gallery-item"><img src="images/library.jpg" alt="Library"><p>Library</p></div>
+        </div>
+    </section>
+
+<section class="location-map" id="location">
+    <h2>Visit Our Campus</h2>
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3570.165242784762!2d76.3533230752119!3d26.51484087688562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396ee438e1128765%3A0x7087863ca171189d!2sNavdeep%20Public%20Sr.%20Sec.%20School!5e0!3m2!1sen!2sin!4v1709564000000!5m2!1sen!2sin" 
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    
+    <div class="map-actions">
+        <a href="https://www.google.com/maps/dir//Navdeep+Public+Sr.+Sec.+School,+Sawai+Madhopur" target="_blank" class="btn directions-btn">🚗 Get Directions</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Navdeep+Public+Sr.+Sec.+School+Sawai+Madhopur" target="_blank" class="btn start-btn">📍 Start Navigation</a>
+    </div>
+</section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <p>Navdeep Public Sr. Sec. School | Rajnagar, Sawai Madhopur</p>
+            <p>Contact: +91 8949713253 / +91 9829132935 | Email: info@navdeepschool.com</p>
+        </div>
+    </footer>
+
+    <div id="facultyModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div id="modal-data"></div>
+        </div>
+    </div>
+
+    <script>
+        const facultyData = {
+            science: `
+                <h2>Science Faculty</h2>
+                <div class="faculty-item">
+                    <img src="images/teacher_sci.jpg" alt="Teacher">
+                    <div>
+                        <h4>Dr. R.P. Sharma (Physics)</h4>
+                        <p>Experience: 15+ Years</p>
+                        <p>Result: 100% in Board Exams</p>
+                    </div>
+                </div>`,
+            arts: `
+                <h2>Arts Faculty</h2>
+                <div class="faculty-item">
+                    <img src="images/teacher_arts.jpg" alt="Teacher">
+                    <div>
+                        <h4>Mr. S.K. Meena (History)</h4>
+                        <p>Experience: 12+ Years</p>
+                        <p>Specialist: Competitive Exam Prep</p>
+                    </div>
+                </div>`,
+            commerce: `
+                <h2>Commerce Faculty</h2>
+                <div class="faculty-item">
+                    <img src="images/teacher_com.jpg" alt="Teacher">
+                    <div>
+                        <h4>Mrs. Anjali Gupta (Accounts)</h4>
+                        <p>Experience: 10+ Years</p>
+                        <p>Specialist: CA Foundation</p>
+                    </div>
+                </div>`
+        };
+
+        function openFaculty(stream) {
+            document.getElementById('modal-data').innerHTML = facultyData[stream];
+            document.getElementById('facultyModal').style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById('facultyModal').style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            let modal = document.getElementById('facultyModal');
+            if (event.target == modal) { closeModal(); }
+        }
+    </script>
+</body>
+</html>
