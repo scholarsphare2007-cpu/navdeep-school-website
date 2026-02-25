@@ -411,22 +411,53 @@ footer {
 /* --- MOBILE RESPONSIVE FIXES --- */
 /* --- FINAL MOBILE RESPONSIVE FIX --- */
 /* --- MOBILE NOTICE FIXED REMOVAL --- */
+/* --- MOBILE RESPONSIVE FINAL FIX --- */
 @media (max-width: 768px) {
-    /* Agar ticker ya header fixed hai toh use normal karo */
-    .news-ticker, .notice-header {
-        position: relative !important; /* Fixed se hata kar normal kiya */
-        top: 0 !important;
-        width: 100% !important;
-        z-index: 1 !important;
+    /* 1. Header ko fixed se hatao taaki scroll ke saath upar jaye */
+    header {
+        position: relative !important;
+        height: auto !important;
+        padding: 15px 5% !important;
     }
 
-    /* Taki scroll karne par ye upar chala jaye */
-    .notice-section {
+    /* 2. Wo Yellow Ticker jo chipak raha hai, use normal karo */
+    .news-ticker {
+        position: relative !important; /* Fixed ko maaro goli */
+        top: 0 !important;
+        height: auto !important;
+        padding: 5px 0 !important;
+    }
+
+    /* 3. Spacer ko zero karo kyunki header ab page ke saath chalega */
+    .header-spacer {
+        height: 0 !important;
+        display: none !important;
+    }
+
+    /* 4. Notice Board (Yellow Line) ki styling */
+    .notice-header {
         position: relative !important;
-        margin-top: 10px !important;
+        background: #FFD700 !important;
+        padding: 12px !important;
+        display: block !important;
+        text-align: center !important;
+    }
+
+    .notice-header h3 {
+        font-size: 14px !important;
+        color: #001226 !important;
+        margin: 0 !important;
+    }
+
+    /* 5. Hero Section ko upar dhakelo */
+    .hero {
+        height: 50vh !important;
+        margin-top: 0 !important;
+    }
+
+    .hero h1 {
+        font-size: 1.6rem !important;
     }
 }
-
-
 
 
