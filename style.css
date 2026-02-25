@@ -408,39 +408,55 @@ footer {
     text-align: left;
     height: 60px; /* Har notice ki height fix rakhna taaki scroll smooth ho */
 }
-/* --- MOBILE RESPONSIVE FIXES --- */
-/* --- FINAL MOBILE RESPONSIVE FIX --- */
-/* --- MOBILE NOTICE FIXED REMOVAL --- */
 /* --- MOBILE RESPONSIVE FINAL FIX --- */
 @media (max-width: 768px) {
-    /* 1. Header ko fixed se hatao taaki scroll ke saath upar jaye */
+    /* 1. Header ko page ke saath upar bhejne ke liye */
     header {
-        position: relative !important;
+        position: absolute !important; /* Fixed ki jagah absolute */
         height: auto !important;
         padding: 15px 5% !important;
+        flex-direction: column !important;
+        border-bottom: 2px solid #FFD700 !important;
     }
 
-    /* 2. Wo Yellow Ticker jo chipak raha hai, use normal karo */
+    .logo-container {
+        margin-bottom: 10px;
+    }
+
+    .logo-text {
+        font-size: 14px !important;
+        text-align: center;
+    }
+
+    nav ul {
+        gap: 10px !important;
+    }
+
+    /* 2. Yellow Ticker (Top Line) Fix */
     .news-ticker {
-        position: relative !important; /* Fixed ko maaro goli */
-        top: 0 !important;
+        position: absolute !important;
+        top: 110px !important; /* Header ke niche set kiya */
         height: auto !important;
-        padding: 5px 0 !important;
+        padding: 8px 0 !important;
     }
 
-    /* 3. Spacer ko zero karo kyunki header ab page ke saath chalega */
-    .header-spacer {
-        height: 0 !important;
-        display: none !important;
+    /* 3. Hero Section ko space dena */
+    .hero {
+        margin-top: 150px !important; /* Header aur ticker ki jagah chhodi */
+        height: 50vh !important;
     }
 
-    /* 4. Notice Board (Yellow Line) ki styling */
+    .hero h1 {
+        font-size: 1.5rem !important;
+    }
+
+    /* 4. Notice Board (Yellow Board) Fix */
     .notice-header {
         position: relative !important;
         background: #FFD700 !important;
         padding: 12px !important;
-        display: block !important;
-        text-align: center !important;
+        display: flex !important;
+        justify-content: center;
     }
 
     .notice-header h3 {
@@ -449,15 +465,8 @@ footer {
         margin: 0 !important;
     }
 
-    /* 5. Hero Section ko upar dhakelo */
-    .hero {
-        height: 50vh !important;
-        margin-top: 0 !important;
-    }
-
-    .hero h1 {
-        font-size: 1.6rem !important;
+    /* 5. Spacer ko gayab karo */
+    .header-spacer {
+        display: none !important;
     }
 }
-
-
