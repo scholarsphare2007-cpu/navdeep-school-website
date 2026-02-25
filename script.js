@@ -34,4 +34,37 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
 });
 
 // 4. Mobile Menu (Future ke liye - agar hum hamburger menu banaye)
+
 // Isme hum click karne par menu open/close karne ka logic daal sakte hain
+const noticeList = document.getElementById('notice-list');
+const noticeContainer = document.getElementById('notice-container');
+
+let scrollInterval;
+
+function startScrolling() {
+    scrollInterval = setInterval(() => {
+        // Pehla notice upar slide karega
+        noticeList.style.transition = 'margin-top 0.5s ease-in-out';
+        noticeList.style.marginTop = '-40px';
+
+        setTimeout(() => {
+            // Pehle notice ko list ke end mein bhej dena
+            noticeList.appendChild(noticeList.firstElementChild);
+            noticeList.style.transition = 'none';
+            noticeList.style.marginTop = '0px';
+        }, 500);
+    }, 3000); // Har 3 second mein scroll hoga
+}
+
+// Mouse upar aane par stop
+noticeContainer.addEventListener('mouseenter', () => {
+    clearInterval(scrollInterval);
+});
+
+// Mouse hatne par firse shuru
+noticeContainer.addEventListener('mouseleave', () => {
+    startScrolling();
+});
+
+// Pehli baar shuru karne ke liye
+startScrolling();
