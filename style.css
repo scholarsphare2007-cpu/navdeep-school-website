@@ -381,4 +381,94 @@ footer {
 .award-special .about-image img {
     border: 6px solid #FFD700;
     box-shadow: 0 10px 20px rgba(179, 135, 40, 0.3);
+
+}
+/* --- NOTICE BOARD DESIGN --- */
+.notice-section {
+    padding: 50px 10% 20px 10%;
+    background-color: #eef2f7;
+}
+
+.notice-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.notice-box {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    border: 2px solid #001226; /* Navy Blue Border */
+    position: relative;
+}
+
+.notice-header {
+    background: #001226;
+    color: #FFD700; /* Golden Text */
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.notice-body {
+    padding: 10px 30px;
+    height: 250px; /* Box ki height fix rakhne ke liye */
+    overflow: hidden;
+}
+
+.notice-body ul {
+    list-style: none;
+    padding: 0;
+}
+
+.notice-body li {
+    padding: 15px 0;
+    border-bottom: 1px dashed #ddd;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.4;
+    text-align: left;
+}
+
+/* New Tag Animation */
+.new-tag {
+    background: #e74c3c;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    margin-right: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% { opacity: 0; }
+}
+
+.notice-footer {
+    background: #f8f9fa;
+    padding: 12px;
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+
+.notice-footer a {
+    color: #001226;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.notice-footer a:hover {
+    color: #b38728;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .notice-section { padding: 30px 5%; }
 }
