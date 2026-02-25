@@ -409,67 +409,72 @@ footer {
     height: 60px; /* Har notice ki height fix rakhna taaki scroll smooth ho */
 }
 @media (max-width: 768px) {
-    /* 1. Header ka structure sahi karo */
+    /* 1. Header Fix: Sab kuch saaf dikhega */
     header {
-        position: relative !important; /* Page ke saath upar jayega */
+        position: relative !important;
         height: auto !important;
-        padding: 15px 10px !important;
+        padding: 10px !important;
         display: flex !important;
-        flex-direction: column !important; /* Sab kuch ek ke niche ek */
+        flex-direction: column !important;
         align-items: center !important;
-        gap: 10px !important;
+        gap: 5px !important;
     }
 
-    /* 2. Logo aur School Name ko ek line mein set karo */
     .logo-container {
         width: 100% !important;
         justify-content: center !important;
-        gap: 8px !important;
-    }
-
-    .school-logo {
-        height: 40px !important;
-        width: 40px !important;
     }
 
     .logo-text {
-        font-size: 14px !important; /* Mobile par naam fit aayega */
+        font-size: 14px !important;
         white-space: nowrap !important;
     }
 
-    /* 3. Menu (Home, About, etc.) ko dhang se dikhao */
-    nav {
-        width: 100% !important;
-    }
-
+    /* 2. Menu Options (Home, About, etc.) ko line mein set karein */
     nav ul {
         display: flex !important;
-        flex-wrap: wrap !important; /* Agar jagah kam ho toh niche wali line mein aa jayein */
+        flex-wrap: wrap !important;
         justify-content: center !important;
         gap: 5px !important;
-        padding: 0 !important;
     }
 
     nav ul li a {
         font-size: 11px !important;
-        padding: 5px 8px !important;
-        background: rgba(255, 255, 255, 0.1); /* Halka background taaki buttons lagein */
-        border-radius: 4px;
+        padding: 4px 6px !important;
+        background: rgba(255, 215, 0, 0.1);
+        border-radius: 3px;
     }
 
-    /* 4. Yellow Ticker aur Hero Section ki spacing */
+    /* 3. News Ticker Gap Fix: Ise fast aur gap-free banane ke liye */
     .news-ticker {
         position: relative !important;
         top: 0 !important;
-        margin-top: 0 !important;
+        padding: 5px 0 !important;
     }
 
+    .news-ticker p {
+        animation: scrollText 12s linear infinite !important; /* Time kam kiya taaki jaldi wapas aaye */
+        padding-left: 100%; /* Starting position set ki */
+    }
+
+    /* 4. Hero Section ki photo aur text fit karein */
     .hero {
-        margin-top: 0 !important; /* Ab spacer ki zaroorat nahi */
-        height: 55vh !important;
+        margin-top: 0 !important;
+        height: 50vh !important;
+    }
+
+    .hero h1 {
+        font-size: 1.4rem !important;
+        padding: 0 10px;
     }
 
     .header-spacer {
         display: none !important;
     }
+}
+
+/* 5. Ticker ki animation ko smooth aur fast karne ke liye */
+@keyframes scrollText {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
 }
