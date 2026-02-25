@@ -474,7 +474,39 @@ footer {
     .notice-section {
         padding: 20px 5% !important;
     }
+    /* --- MOBILE NOTICE BOARD (YELLOW LINE) FIX --- */
+    .notice-header {
+        background: #FFD700 !important; /* Yellow background pakka karein */
+        padding: 10px !important;
+        height: auto !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .notice-header h3 {
+        font-size: 14px !important; /* Mobile par font chota */
+        color: #001226 !important; /* Navy blue color yellow par dikhega */
+        margin: 0 !important;
+        font-weight: 800 !important;
+        text-transform: uppercase;
+    }
+
+    .notice-section {
+        margin-top: 15px !important; /* Hero section se thodi doori */
+        padding: 10px 5% !important;
+    }
+
+    .notice-body {
+        height: 180px !important; /* Mobile par box thoda chota */
+    }
+
+    .notice-body li {
+        font-size: 13px !important; /* List ka text bhi thoda chota */
+        line-height: 1.3 !important;
+    }
 }
+
 
 
 
