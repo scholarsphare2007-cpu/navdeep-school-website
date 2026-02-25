@@ -408,4 +408,69 @@ footer {
     text-align: left;
     height: 60px; /* Har notice ki height fix rakhna taaki scroll smooth ho */
 }
+/* --- MOBILE RESPONSIVE FIXES --- */
+@media (max-width: 768px) {
+    /* Header aur Logo fix */
+    header {
+        height: auto;
+        padding: 10px 3%;
+        flex-direction: column; /* Logo upar, menu niche */
+        text-align: center;
+    }
+
+    .logo-text {
+        font-size: 14px; /* Mobile par naam chota karein taaki kate nahi */
+        white-space: normal; /* Naam ko do line mein aane dega */
+    }
+
+    nav ul {
+        gap: 10px;
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    /* Hero Section (School Name & Button) */
+    .hero h1 {
+        font-size: 1.8rem; /* Mobile par bada heading chota karein */
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .header-spacer {
+        height: 160px; /* Mobile par header bada ho jata hai isliye spacer badhaya */
+    }
+
+    /* Principal/Award Section */
+    .centered-layout {
+        padding: 40px 20px !important;
+    }
+
+    .centered-layout .about-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .award-title {
+        font-size: 20px;
+    }
+
+    /* Cards (Faculties, Toppers, Facilities) */
+    .stream-card, .feature-box, .topper-card {
+        width: 100%; /* Mobile par cards poori width lenge */
+        margin-bottom: 20px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Sab kuch ek ke niche ek */
+    }
+}
+
 
