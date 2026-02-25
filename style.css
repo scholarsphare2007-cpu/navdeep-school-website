@@ -408,64 +408,67 @@ footer {
     text-align: left;
     height: 60px; /* Har notice ki height fix rakhna taaki scroll smooth ho */
 }
-/* --- MOBILE RESPONSIVE FINAL FIX --- */
 @media (max-width: 768px) {
-    /* 1. Header ko page ke saath upar bhejne ke liye */
+    /* 1. Header ka structure sahi karo */
     header {
-        position: absolute !important; /* Fixed ki jagah absolute */
+        position: relative !important; /* Page ke saath upar jayega */
         height: auto !important;
-        padding: 15px 5% !important;
-        flex-direction: column !important;
-        border-bottom: 2px solid #FFD700 !important;
-    }
-
-    .logo-container {
-        margin-bottom: 10px;
-    }
-
-    .logo-text {
-        font-size: 14px !important;
-        text-align: center;
-    }
-
-    nav ul {
+        padding: 15px 10px !important;
+        display: flex !important;
+        flex-direction: column !important; /* Sab kuch ek ke niche ek */
+        align-items: center !important;
         gap: 10px !important;
     }
 
-    /* 2. Yellow Ticker (Top Line) Fix */
-    .news-ticker {
-        position: absolute !important;
-        top: 110px !important; /* Header ke niche set kiya */
-        height: auto !important;
-        padding: 8px 0 !important;
+    /* 2. Logo aur School Name ko ek line mein set karo */
+    .logo-container {
+        width: 100% !important;
+        justify-content: center !important;
+        gap: 8px !important;
     }
 
-    /* 3. Hero Section ko space dena */
-    .hero {
-        margin-top: 150px !important; /* Header aur ticker ki jagah chhodi */
-        height: 50vh !important;
+    .school-logo {
+        height: 40px !important;
+        width: 40px !important;
     }
 
-    .hero h1 {
-        font-size: 1.5rem !important;
+    .logo-text {
+        font-size: 14px !important; /* Mobile par naam fit aayega */
+        white-space: nowrap !important;
     }
 
-    /* 4. Notice Board (Yellow Board) Fix */
-    .notice-header {
-        position: relative !important;
-        background: #FFD700 !important;
-        padding: 12px !important;
+    /* 3. Menu (Home, About, etc.) ko dhang se dikhao */
+    nav {
+        width: 100% !important;
+    }
+
+    nav ul {
         display: flex !important;
-        justify-content: center;
+        flex-wrap: wrap !important; /* Agar jagah kam ho toh niche wali line mein aa jayein */
+        justify-content: center !important;
+        gap: 5px !important;
+        padding: 0 !important;
     }
 
-    .notice-header h3 {
-        font-size: 14px !important;
-        color: #001226 !important;
-        margin: 0 !important;
+    nav ul li a {
+        font-size: 11px !important;
+        padding: 5px 8px !important;
+        background: rgba(255, 255, 255, 0.1); /* Halka background taaki buttons lagein */
+        border-radius: 4px;
     }
 
-    /* 5. Spacer ko gayab karo */
+    /* 4. Yellow Ticker aur Hero Section ki spacing */
+    .news-ticker {
+        position: relative !important;
+        top: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    .hero {
+        margin-top: 0 !important; /* Ab spacer ki zaroorat nahi */
+        height: 55vh !important;
+    }
+
     .header-spacer {
         display: none !important;
     }
